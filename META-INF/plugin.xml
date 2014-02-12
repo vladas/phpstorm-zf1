@@ -1,7 +1,7 @@
 <idea-plugin version="2">
-  <id>com.dirzys.phpstorm_zf1</id>
+  <id>com.dirzys.phpstormzf1</id>
   <name>ZF1 integration plugin</name>
-  <version>1.0</version>
+  <version>1.0.4</version>
   <vendor email="vladas.dirzys@gmail.com" url="http://www.dirzys.com">Vladas Diržys</vendor>
 
   <description><![CDATA[
@@ -21,8 +21,6 @@
   <!-- uncomment to enable plugin in all products
   <depends>com.intellij.modules.lang</depends>
   -->
-  <depends>com.jetbrains.php</depends>
-  <depends>com.intellij.modules.platform</depends>
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
@@ -31,7 +29,7 @@
   <application-components>
     <!-- Add your application components here -->
       <!--<component>-->
-          <!--<implementation-class>com.dirzys.phpstorm_zf1.components.PluginRegistration</implementation-class>-->
+          <!--<implementation-class>com.dirzys.phpstormzf1components.PluginRegistration</implementation-class>-->
       <!--</component>-->
   </application-components>
 
@@ -41,16 +39,19 @@
 
   <actions>
     <!-- Add your actions here -->
-      <action id="phpstorm-zf1.navigateToView2" class="com.dirzys.phpstorm_zf1.actions.ViewNavigator"
+      <action id="phpstorm-zf1.navigateToView2" class="com.dirzys.phpstormzf1.actions.ViewNavigator"
               text="Go to view script..."
               description="Opens view file of an action">
           <add-to-group group-id="GoToMenu" anchor="last"/>
       </action>
-      <action id="phpstorm-zf1.navigateToView3" class="com.dirzys.phpstorm_zf1.actions.ViewNavigator"
+      <action id="phpstorm-zf1.navigateToView3" class="com.dirzys.phpstormzf1.actions.ViewNavigator"
               text="Go to view script..."
               description="Opens view file of an action">
           <add-to-group group-id="GoToMenuEx" anchor="last"/>
       </action>
   </actions>
+
+  <depends>com.jetbrains.php</depends>
+  <depends>com.intellij.modules.platform</depends>
 
 </idea-plugin>

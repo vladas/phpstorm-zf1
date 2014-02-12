@@ -1,4 +1,4 @@
-package com.dirzys.phpstorm_zf1.actions;
+package com.dirzys.phpstormzf1.actions;
 
 import com.dirzys.zf1.Action;
 import com.dirzys.zf1.ActionFactory;
