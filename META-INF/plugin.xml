@@ -49,6 +49,11 @@
               description="Opens view file of an action">
           <add-to-group group-id="GoToMenuEx" anchor="last"/>
       </action>
+      <action id="phpstorm-zf1.navigateToView4" class="com.dirzys.phpstormzf1.actions.ControllerActionNavigator"
+              text="Go to controller action..."
+              description="Opens view file of an action">
+          <add-to-group group-id="GoToMenuEx" anchor="last"/>
+      </action>
   </actions>
 
   <depends>com.jetbrains.php</depends>

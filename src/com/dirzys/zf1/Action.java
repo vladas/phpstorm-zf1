@@ -1,5 +1,8 @@
 package com.dirzys.zf1;
 
+/**
+ * Fully qualified action
+ */
 public class Action {
     protected String module = "";
 

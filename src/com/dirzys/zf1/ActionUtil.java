@@ -44,4 +44,36 @@ public class ActionUtil {
 
         return actionName;
     }
+
+    public static String getControllerFileNameFromViewDirName(String dirName) {
+        String controllerName;
+
+        controllerName = CaseFormat.LOWER_HYPHEN.to(CaseFormat.UPPER_CAMEL, dirName);
+
+        controllerName += "Controller.php";
+
+        return controllerName;
+    }
+
+    public static String getActionMethodNameFromFileName(String fileNameWithoutExtention) {
+        String actionName;
+
+        actionName = CaseFormat.LOWER_HYPHEN.to(CaseFormat.UPPER_CAMEL, fileNameWithoutExtention);
+
+        actionName += "Action";
+
+        actionName = Character.toLowerCase(actionName.charAt(0)) + actionName.substring(1);
+
+        return actionName;
+    }
+
+    public static String getModuleNameFromViewsParentDirName(String viewsParentDirName) {
+        String moduleName = null;
+
+        if (!viewsParentDirName.equals("application")) {
+            moduleName = CaseFormat.LOWER_HYPHEN.to(CaseFormat.UPPER_CAMEL, viewsParentDirName);
+        }
+
+        return moduleName;
+    }
 }
