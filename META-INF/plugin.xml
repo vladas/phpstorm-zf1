@@ -6,7 +6,7 @@
 
   <description><![CDATA[
       Zend Framework 1 integration plugin. <br/>
-      Adds menu item "Go to view script..." to the Navigate menu.
+      Adds menu item "Go to view script..." and "Go to controller action..." to the Navigate menu.
     ]]></description>
 
   <change-notes><![CDATA[
